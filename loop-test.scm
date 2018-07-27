@@ -1,0 +1,5 @@
+(define (loop-test times)
+	(let loop ((t times))
+		(if (= times 0)
+			(display 0)
+			(begin (display times) (newline) (set! times (- times 1)) (loop (- t 1))))))
